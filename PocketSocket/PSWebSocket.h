@@ -65,6 +65,7 @@ typedef NS_ENUM(NSInteger, PSWebSocketReadyState) {
 
 @property (nonatomic, assign, getter=isInputPaused) BOOL inputPaused;
 @property (nonatomic, assign, getter=isOutputPaused) BOOL outputPaused;
+@property (nonatomic, strong, readonly) NSString* remoteHost;
 
 #pragma mark - Initialization
 
