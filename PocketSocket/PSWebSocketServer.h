@@ -53,5 +53,6 @@
 
 - (void)start;
 - (void)stop;
+- (NSArray *)getWebsocketConnections;
 
 @end

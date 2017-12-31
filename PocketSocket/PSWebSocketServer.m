@@ -149,6 +149,10 @@ void PSWebSocketServerAcceptCallback(CFSocketRef s, CFSocketCallBackType type, C
     }];
 }
 
+- (NSArray *)getWebsocketConnections {
+    return _webSockets.allObjects;
+}
+
 #pragma mark - Connection
 
 - (void)connect:(BOOL)silent {
